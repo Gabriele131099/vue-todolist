@@ -14,8 +14,13 @@ new Vue(
         },
         methods: {
             addTask: function(){
-                this.todoList.push(this.newTask)
-                this.newTask = ' '
+               if (this.newTask ==='' || this.newTask === 'undefined') {
+                   alert('inserire un elemento')
+                }else{
+                    this.todoList.push(this.newTask)
+                    this.newTask = ' '
+               }
+               
             },
             deleteTask: function(index){
                 console.log(index)
