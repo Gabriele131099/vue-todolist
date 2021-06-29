@@ -14,13 +14,15 @@ new Vue(
         },
         methods: {
             addTask: function(){
+
                if (this.newTask ==='' || this.newTask === 'undefined') {
-                   alert('inserire un elemento')
+                   let str = 'inserisci un valore nella lista'
+                    alert(str)
                 }else{
                     this.todoList.push(this.newTask)
-                    this.newTask = ' '
-               }
-               
+                    
+                }
+                this.newTask = ''
             },
             deleteTask: function(index){
                 console.log(index)
@@ -33,4 +35,3 @@ new Vue(
     
     );
     
-        
