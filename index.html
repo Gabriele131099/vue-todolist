@@ -12,18 +12,21 @@
 
 </head>
 <body>
-    <nav>
-        
-    </nav>
-    <div id="app">
-        <input type="text" v-model="newTask" @keyup.enter="addTask" placeholder="inserisci un nuovo task">
-        <button @click="addTask">Aggiungi</button>
-        <ul >
-            <li v-for="(todo, index) in todoList" >
-                {{todo}}<i @click="deleteTask(index)"  class="fas fa-backspace delete"></i>
-            </li>
-        </ul>
-    
+    <div class="container-home">
+        <nav>
+            <div class="logo-img">
+                <img src="./img/logo.png" alt="">
+            </div>
+        </nav>
+        <section id="app" class="first-section">
+                <input class="input-text" type="text" v-model="newTask" @keyup.enter="addTask" placeholder="inserisci un nuovo task">
+                <button @click="addTask">Aggiungi</button>
+                <ul >
+                    <li v-for="(todo, index) in todoList" >
+                        {{todo}}<i @click="deleteTask(index)"  class="fas fa-backspace delete"></i>
+                    </li>
+                </ul>
+        </section>
     </div>
     <script src="./script.js"></script>
 </body>

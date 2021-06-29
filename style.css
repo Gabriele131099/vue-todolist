@@ -1,3 +1,28 @@
 .delete{
     cursor: pointer;
 }
+.logo-img img
+{
+    width: 400px;
+}
+.container-home
+{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.input-text
+{
+    padding: 10px 15px;
+    border-radius: 15px;
+    width: 500px;
+}
+.first-section button
+{
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: white;
+}
