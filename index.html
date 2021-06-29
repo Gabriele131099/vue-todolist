@@ -22,11 +22,11 @@
                 <div class="add-elementList">
                     <input class="input-text col-xs-12 col-md-9 col-xl-7" type="text" v-model="newTask" @keyup.enter="addTask" placeholder="inserisci un nuovo task" id="modulo" >
                     
-                    <button @click="addTask" value="invia" onClick="modulo()">Aggiungi</button>    
+                    <button @click="addTask">Aggiungi</button>    
                 </div>
                 <ul class="todoList container">
                     <li v-for="(todo, index) in todoList" >
-                        {{todo.elementList}}<i @click="deleteTask(index)"  class="fas fa-backspace delete"></i>
+                        {{todo}}<i @click="deleteTask(index)"  class="fas fa-backspace delete"></i>
                     </li>
                 </ul>
         </section>

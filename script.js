@@ -5,9 +5,9 @@ new Vue(
         el: '#app',
         data: {
             todoList: [
-                {elementList: 'Compra il Latte'},
-                {elementList: 'Compra il Pane'},
-                {elementList: 'Compra il Prosciutto'}, 
+                'Compra il Latte',
+                'Compra il Pane',
+                'Compra il Prosciutto', 
                 
             ],
             newTask: '',
