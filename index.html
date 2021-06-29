@@ -14,17 +14,17 @@
 <body>
     <div class="container-home">
         <nav>
-            <div class="logo-img col-xs-12 col-md-10 col-xl-8">
+            <div class="logo-img col-xs-12 col-md-12 col-xl-8">
                 <img src="./img/logo.png" alt="">
             </div>
         </nav>
         <section id="app" class="first-section">
                 <div class="add-elementList">
-                    <input class="input-text col-xs-11 col-md-9 col-xl-7" type="text" v-model="newTask" @keyup.enter="addTask" placeholder="inserisci un nuovo task" id="modulo" >
+                    <input class="input-text col-xs-12 col-md-9 col-xl-7" type="text" v-model="newTask" @keyup.enter="addTask" placeholder="inserisci un nuovo task" id="modulo" >
                     
                     <button @click="addTask" value="invia" onClick="modulo()">Aggiungi</button>    
                 </div>
-                <ul class="todoList">
+                <ul class="todoList container">
                     <li v-for="(todo, index) in todoList" >
                         {{todo.elementList}}<i @click="deleteTask(index)"  class="fas fa-backspace delete"></i>
                     </li>
