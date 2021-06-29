@@ -1,9 +1,13 @@
 .delete{
     cursor: pointer;
 }
+.logo-img
+{
+    margin: auto;
+}
 .logo-img img
 {
-    width: 400px;
+    width: 100%;
 }
 .container-home
 {
@@ -14,15 +18,45 @@
     left: 50%;
     transform: translate(-50% , -50%);
 }
+.add-elementList
+{
+   display: flex;
+   justify-content: center;
+   margin-bottom: 20px;
+}
 .input-text
 {
     padding: 10px 15px;
     border-radius: 15px;
-    width: 500px;
+    outline: none;
 }
 .first-section button
 {
     padding: 10px 15px;
     border-radius: 15px;
     background-color: white;
+    margin-left:15px ;
+    
+}
+.input-text:focus, .add-elementList button:focus {
+    border-color: #FF0000;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+  }
+ul
+{
+    list-style-type: none;
+    width: 100%;
+    background-color: #f3f7f7;
+    padding: 30px 15px 30px 15px;
+}
+.todoList li
+{
+    border-bottom: 1px solid lightgray;
+    padding: 10px 0px;
+
+}
+
+.todoList li i
+{
+    float: right;
 }
